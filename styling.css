@@ -1,0 +1,112 @@
+#hidden {
+	display: none;
+}
+
+.card {
+	font-family: "Source Han Serif JP";
+	font-size: 18pt;
+	padding: .2em;
+}
+
+.equiv {
+	margin-left: 1em;
+	font-style: italic;
+}
+
+#usage_header,
+#usage {
+	width: 80%;
+	padding: 1em;
+	border-left: 4px solid #94e2d5;
+}
+
+#usage_header {
+	background-color: #181825;
+	margin-bottom: 0;
+}
+
+#usage {
+	margin-top: 0;
+	margin-bottom: 1em;
+	color: #cdd6f4;
+}
+
+#page {
+	float: right;
+	font-size: 70%;
+}
+
+#main_concept {
+	font-weight: bold;
+	font-size: 120%;
+}
+
+hr {
+	color: #89b4fa;
+}
+
+img {
+	width: auto;
+	height: auto;
+	max-width: 100%;
+	max-height: none;
+}
+
+p {
+	color: #cdd6f4;
+}
+
+table td {
+	padding: 8px;
+	font-size: 11pt;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+tr.head {
+	border-bottom: 1px solid #f9e2af !important;
+	background-color: #f5e0dc;
+}
+
+.green,
+.numbers {
+	color: #a6e3a1 !important;
+}
+
+.cloze,
+.concept {
+	color: #74c7ec;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+#cloze_sentence .cloze {
+	font-weight: bold;
+}
+
+#formation_header {
+	padding: 7px;
+	margin-left: .2em;
+	border: none !important;
+	font-family: "Source Han Serif JP";
+	font-size: 95%;
+	font-weight: bold;
+}
+
+.example_en {
+	margin-left: 3em;
+	margin-bottom: 7px;
+	color: #f5e0dc;
+}
+
+.example_en a {
+	text-decoration: none;
+}
+
+.example_jp {
+	color: #cdd6f4;
+}

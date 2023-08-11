@@ -1,0 +1,92 @@
+<p id="sentence"></p>
+
+<div id="hidden">
+	{{#expression_jp}}
+	<div class="jp_hidden" id="s0">{{expression_jp}}</div>
+	<div id="engs0">{{expression_en}}</div>
+	{{/expression_jp}}
+
+	{{#example 1_jp}}
+	<div class="jp_hidden" id="s1">{{example 1_jp}}</div>
+	<div id="engs1">{{example 1_en}}</div>
+	{{/example 1_jp}}
+
+	{{#example 2_jp}}
+	<div class="jp_hidden" id="s2">{{example 2_jp}}</div>
+	<div id="engs2">{{example 2_en}}</div>
+	{{/example 2_jp}}
+
+	{{#example 3_jp}}
+	<div class="jp_hidden" id="s3">{{example 3_jp}}</div>
+	<div id="engs3">{{example 3_en}}</div>
+	{{/example 3_jp}}
+
+	{{#example 4_jp}}
+	<div class="jp_hidden" id="s4">{{example 4_jp}}</div>
+	<div id="engs4">{{example 4_en}}</div>
+	{{/example 4_jp}}
+
+	{{#example 5_jp}}
+	<div class="jp_hidden" id="s5">{{example 5_jp}}</div>
+	<div id="engs5">{{example 5_en}}</div>
+	{{/example 5_jp}}
+
+	{{#example 6_jp}}
+	<div class="jp_hidden" id="s6">{{example 6_jp}}</div>
+	<div id="engs6">{{example 6_en}}</div>
+	{{/example 6_jp}}
+
+	{{#example 7_jp}}
+	<div class="jp_hidden" id="s7">{{example 7_jp}}</div>
+	<div id="engs7">{{example 7_en}}</div>
+	{{/example 7_jp}}
+
+	{{#example 8_jp}}
+	<div class="jp_hidden" id="s8">{{example 8_jp}}</div>
+	<div id="engs8">{{example 8_en}}</div>
+	{{/example 8_jp}}
+
+	{{#example 9_jp}}
+	<div class="jp_hidden" id="s9">{{example 9_jp}}</div>
+	<div id="engs9">{{example 9_en}}</div>
+	{{/example 9_jp}}
+
+	{{#example 10_jp}}
+	<div class="jp_hidden" id="s10">{{example 10_jp}}</div>
+	<div id="engs10">{{example 10_en}}</div>
+	{{/example 10_jp}}
+
+	{{#example 11_jp}}
+	<div class="jp_hidden" id="s11">{{example 11_jp}}</div>
+	<div id="engs11">{{example 11_en}}</div>
+	{{/example 11_jp}}
+
+	{{#example 12_jp}}
+	<div class="jp_hidden" id="s12">{{example 12_jp}}</div>
+	<div id="engs12">{{example 12_en}}</div>
+	{{/example 12_jp}}
+
+	{{#example 13_jp}}
+	<div class="jp_hidden" id="s13">{{example 13_jp}}</div>
+	<div id="engs13">{{example 13_en}}</div>
+	{{/example 13_jp}}
+
+	{{#example 14_jp}}
+	<div class="jp_hidden" id="s14">{{example 14_jp}}</div>
+	<div id="engs14">{{example 14_en}}</div>
+	{{/example 14_jp}}
+
+	{{#example 15_jp}}
+	<div class="jp_hidden" id="s15">{{example 15_jp}}</div>
+	<div id="engs15">{{example 15_en}}</div>
+	{{/example 15_jp}}
+</div>
+
+<script>
+	if (typeof japanese == "undefined") {
+		var sentences = document.querySelectorAll(".jp_hidden");
+		var japanese = sentences[Math.floor(Math.random() * sentences.length)];
+		var english = document.getElementById("eng" + japanese.id);
+		document.getElementById("sentence").innerHTML = japanese.innerHTML;
+	}
+</script>

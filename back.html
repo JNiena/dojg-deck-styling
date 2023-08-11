@@ -1,0 +1,140 @@
+{{FrontSide}}
+
+<hr />
+
+<div id="english_reveal"></div>
+
+<br>
+
+<div id="usage_header">
+	<span id="main_concept">{{grammatical concept}}</span> <span id="page">{{part of speech}} ({{volume}}
+		{{page}})</span>
+</div>
+
+<div id="usage">{{usage}} <div class="equiv">{{equivalent}}</div>
+</div>
+
+<div id="backs0">
+	<div class="example_jp">{{expression_jp}}</div>
+	<div class="example_en">{{hint:expression_en}}</div>
+</div>
+
+<div id="backs1">
+	{{#example 1_jp}}
+	<div class="example_jp">{{example 1_jp}}</div>
+	<div class="example_en">{{hint:example 1_en}}</div>
+	{{/example 1_jp}}
+</div>
+
+<div id="backs2">
+	{{#example 2_jp}}
+	<div class="example_jp">{{example 2_jp}}</div>
+	<div class="example_en">{{hint:example 2_en}}</div>
+	{{/example 2_jp}}
+</div>
+
+<div id="backs3">
+	{{#example 3_jp}}
+	<div class="example_jp">{{example 3_jp}}</div>
+	<div class="example_en">{{hint:example 3_en}}</div>
+	{{/example 3_jp}}
+</div>
+
+<div id="backs4">
+	{{#example 4_jp}}
+	<div class="example_jp">{{example 4_jp}}</div>
+	<div class="example_en">{{hint:example 4_en}}</div>
+	{{/example 4_jp}}
+</div>
+
+<div id="backs5">
+	{{#example 5_jp}}
+	<div class="example_jp">{{example 5_jp}}</div>
+	<div class="example_en">{{hint:example 5_en}}</div>
+	{{/example 5_jp}}
+</div>
+
+<div id="backs6">
+	{{#example 6_jp}}
+	<div class="example_jp">{{example 6_jp}}</div>
+	<div class="example_en">{{hint:example 6_en}}</div>
+	{{/example 6_jp}}
+</div>
+
+<div id="backs7">
+	{{#example 7_jp}}
+	<div class="example_jp">{{example 7_jp}}</div>
+	<div class="example_en">{{hint:example 7_en}}</div>
+	{{/example 7_jp}}
+</div>
+
+<div id="backs8">
+	{{#example 8_jp}}
+	<div class="example_jp">{{example 8_jp}}</div>
+	<div class="example_en">{{hint:example 8_en}}</div>
+	{{/example 8_jp}}
+</div>
+
+<div id="backs9">
+	{{#example 9_jp}}
+	<div class="example_jp">{{example 9_jp}}</div>
+	<div class="example_en">{{hint:example 9_en}}</div>
+	{{/example 9_jp}}
+</div>
+
+<div id="backs10">
+	{{#example 10_jp}}
+	<div class="example_jp">{{example 10_jp}}</div>
+	<div class="example_en">{{hint:example 10_en}}</div>
+	{{/example 10_jp}}
+</div>
+
+<div id="backs11">
+	{{#example 11_jp}}
+	<div class="example_jp">{{example 11_jp}}</div>
+	<div class="example_en">{{hint:example 11_en}}</div>
+	{{/example 11_jp}}
+</div>
+
+<div id="backs12">
+	{{#example 12_jp}}
+	<div class="example_jp">{{example 12_jp}}</div>
+	<div class="example_en">{{hint:example 12_en}}</div>
+	{{/example 12_jp}}
+</div>
+
+<div id="backs13">
+	{{#example 13_jp}}
+	<div class="example_jp">{{example 13_jp}}</div>
+	<div class="example_en">{{hint:example 13_en}}</div>
+	{{/example 13_jp}}
+</div>
+
+<div id="backs14">
+	{{#example 14_jp}}
+	<div class="example_jp">{{example 14_jp}}</div>
+	<div class="example_en">{{hint:example 14_en}}</div>
+	{{/example 14_jp}}
+</div>
+
+<div id="backs15">
+	{{#example 15_jp}}
+	<div class="example_jp">{{example 15_jp}}</div>
+	<div class="example_en">{{hint:example 15_en}}</div>
+	{{/example 15_jp}}
+</div>
+
+{{#formation}}
+<p id="formation_header">Formation</p>
+{{/formation}}
+
+<div id="formation">
+	{{formation}}
+</div>
+
+<script>
+	document.getElementById("sentence").innerHTML = japanese.innerHTML;
+	document.getElementById("english_reveal").innerHTML = english.innerHTML;
+	document.getElementById("back" + japanese.id).innerHTML = "";
+	japanese = undefined;
+</script>
